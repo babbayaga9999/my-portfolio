@@ -2,45 +2,46 @@
 
 .projects {
     padding: 50px;
-    background-color: #fafafa;
+    background-color: #ECF0F1; /* Light background from palette */
     text-align: center;
-  }
-  
-  .projects h2 {
+}
+
+.projects h2 {
     font-size: 2em;
-    color: #333;
+    color: #2C3E50; /* Primary Color */
     margin-bottom: 20px;
-  }
-  
-  .projects-list {
+}
+
+.projects-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .project-item {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+}
+
+.project-item {
+    background-color: #ffffff; /* White background for project cards */
+    border: 1px solid #ddd; /* Light border for separation */
     border-radius: 5px;
     padding: 20px;
     margin: 15px;
     width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .project-item h3 {
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for box-shadow */
+}
+
+.project-item h3 {
     font-size: 1.5em;
-    color: #333;
-  }
-  
-  .project-item p {
+    color: #2C3E50; /* Primary Color */
+}
+
+.project-item p {
     font-size: 1em;
-    color: #666;
+    color: #666; /* Darker gray for description text */
     margin-top: 10px;
-  }
-  
-  .project-item:hover {
+}
+
+/* Hover effects */
+.project-item:hover {
     transform: scale(1.05);
-  }
-  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly enhanced shadow on hover */
+}

@@ -1,7 +1,20 @@
 /* src/components/Home.css */
+
 .home {
     text-align: center;
     padding: 100px 20px;
-    background-color: #f4f4f4;
-  }
-  
+    background-color: #ECF0F1; /* Light background from the palette */
+}
+
+.home h1 {
+    font-size: 3em; /* Increase font size for emphasis */
+    color: #2C3E50; /* Primary Color */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.home p {
+    font-size: 1.2em; /* Slightly larger font for readability */
+    color: #34495E; /* Dark Gray for text */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}

@@ -1,22 +1,28 @@
 /* src/components/Navbar.css */
+
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #333;
-  }
-  
-  .navbar ul {
+    background-color: #2C3E50; /* Primary Color for the navbar background */
+    padding: 15px 0; /* Added padding for a better appearance */
+}
+
+.navbar ul {
     list-style-type: none;
     display: flex;
-  }
-  
-  .navbar li {
+}
+
+.navbar li {
     margin: 0 15px;
-  }
-  
-  .navbar a {
-    color: white;
+}
+
+.navbar a {
+    color: #ECF0F1; /* Light color for links (contrast with background) */
     text-decoration: none;
     font-size: 1.2em;
-  }
-  
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #E74C3C; /* Accent Color on hover */
+}

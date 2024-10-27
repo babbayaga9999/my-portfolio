@@ -2,43 +2,43 @@
 
 .contact {
     padding: 50px;
-    background-color: #e0f7fa;
+    background-color: #ECF0F1; /* Light background from the palette */
     text-align: center;
-  }
-  
-  .contact h2 {
+}
+
+.contact h2 {
     font-size: 2em;
-    color: #333;
+    color: #2C3E50; /* Primary Color */
     margin-bottom: 20px;
-  }
-  
-  .contact form {
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
-  }
-  
-  .contact input,
-  .contact textarea {
+}
+
+.contact input,
+.contact textarea {
     font-size: 1em;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #BDC3C7; /* Light gray border for inputs */
     border-radius: 5px;
-  }
-  
-  .contact button {
+}
+
+.contact button {
     padding: 10px 20px;
-    background-color: #00796b;
-    color: #fff;
+    background-color: #3498DB; /* Secondary Color */
+    color: #FFFFFF; /* White text for button */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
-  }
-  
-  .contact button:hover {
-    background-color: #004d40;
-  }
-  
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact button:hover {
+    background-color: #2980B9; /* Darker shade on hover */
+}
