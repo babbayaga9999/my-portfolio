@@ -6,8 +6,9 @@ function About() {
   return (
     <section id="about" className="about">
       <h2>About Me</h2>
-      <p>I'm a [Your Profession] with experience in [skills].</p>
-      <p>I love creating beautiful and functional applications.</p>
+<p>I'm a Full Stack Web Developer with expertise in Laravel, Vue.js, and React.js.</p>
+<p>I love creating beautiful and functional applications that provide excellent user experiences and meet the needs of clients.</p>
+
     </section>
   );
 }

@@ -5,7 +5,7 @@ import './Home.css';
 function Home() {
   return (
     <section id="home" className="home">
-      <h1>Hello, I'm [Your Name]</h1>
+      <h1>Hello, I'm Ankit Upadhyay</h1>
       <p>Welcome to my personal portfolio website.</p>
     </section>
   );
