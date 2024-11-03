@@ -1,5 +1,7 @@
 /* src/components/About.css */
-
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .about {
     padding: 50px;
     background-color: #ECF0F1; /* Light background from the palette */
