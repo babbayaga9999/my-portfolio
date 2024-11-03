@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contact.css'; // Ensure this file exists
+import './Contact.css'; // Make sure this file exists and styles your form as needed.
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -7,6 +7,8 @@ function Contact() {
     email: '',
     message: '',
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,6 +20,7 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true); // Indicate form submission in progress
 
     try {
       const response = await fetch('http://localhost:5000/send', {
@@ -37,6 +40,8 @@ function Contact() {
     } catch (error) {
       console.error('Error:', error);
       alert('Oops! Something went wrong. Please try again later.');
+    } finally {
+      setIsSubmitting(false); // Reset submission state
     }
   };
 
@@ -67,10 +72,12 @@ function Contact() {
           onChange={handleChange}
           required
         ></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Sending...' : 'Send'}
+        </button>
       </form>
     </section>
   );
 }
 
-export default Contact; // Ensure this line is present
+export default Contact;
